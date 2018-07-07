@@ -4,8 +4,8 @@
 }
 
 body {
-  background: #2c2c2c;
-  color: white;
+  background: #FEFDFB;
+  color: #8c2b99ff;
   margin: 0;
   font-family: 'Scope One', serif;
 }
@@ -46,7 +46,7 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: #B0E0E6;
+  color: #8c2b99ff;
   display: block;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .nav a:hover,
 .nav a.active {
-  color: #FFA07A;
+  color: #8c2b99ff;
 }
 
 .title_and_nav {
@@ -115,7 +115,7 @@ body {
 
 h1 {
   margin-bottom: 0px;
-  color: #FFA07A;
+  color: #8c2b99ff;
   font-size: 4vw;
   font-family: 'Karla', sans-serif;
 }
@@ -127,7 +127,7 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: #8c2b99ff;
   font-size: 32px;
   font-family: 'Karla', sans-serif;
 
@@ -155,23 +155,24 @@ p {
 
 a {
   text-decoration: none;
-  color: #B0E0E6;
+  color: #8c2b99ff;
   transition: .2s color;
 }
 
 a:hover {
-  color: #FFA07A;
+  color: #8c2b99ff;
 }
 
 .subtitle {
-  color: #FFA07A;
+  color: #8c2b99ff;
   font-style: italic;
-  font-size: 2vw;
+  font-size: 1.5vw;
+  padding-right: 25px;
 }
 
 @media (max-width: 750px) {
   .subtitle {
-    font-size: 6vw;
+    font-size: 4vw;
   }
 }
 
@@ -192,7 +193,7 @@ a:hover {
 .sidebar {
   flex:1;
   margin-left:30px;
-  color: #FFA07A;
+  color: #8c2b99ff;
 }
 
 @media (max-width: 750px) {
@@ -202,7 +203,7 @@ a:hover {
 }
 
 .sidebar a:hover {
-  color: white;
+  color: F#EFDFB;
 }
 
 .thumbnail {
@@ -224,7 +225,7 @@ img.thumbnail {
 }
 
 .face {
-  width: 35vw;
+  width: 34vw;
   padding-right: 40px;
   margin: 26.56px 0;
 }
@@ -241,6 +242,7 @@ img.thumbnail {
 .face img {
   max-width: 100%;
   border-radius: 100%;
+  border: 5px solid #8c2b99ff;
 }
 
 @media (max-width: 750px) {
@@ -263,7 +265,7 @@ img.thumbnail {
 
 .hide {
   display: none;
-  color: #B0E0E6;
+  color: #8c2b99ff;
   padding-left: 40px;
   font-style: italic;
   cursor: pointer;
@@ -276,7 +278,7 @@ img.thumbnail {
 
   .details-button {
     display: inline;
-    color: #B0E0E6;
+    color: #8c2b99ff;
     padding-left: 40px;
     font-style: italic;
     cursor: pointer;
@@ -298,12 +300,12 @@ img.thumbnail {
 
 .button {
   display: block;
-  background-color: #B0E0E6;
+  background-color: #8c2b99ff;
   width: 250px;
   height: 30px;
   padding-top: 5px;
   border-radius: 10px;
-  color: #2c2c2c;
+  color: #FEFDFB;
   text-align: center;
   margin: 0 auto;
   font-size: 18px;
@@ -324,6 +326,28 @@ img.thumbnail {
   max-width: inherit;
 }
 
+form.contact label, input {
+  display: block;
+}
+
+form.contact input, textarea {
+  margin-bottom: 20px;
+  width: 400px;
+  min-height: 40px;
+}
+
+form.contact input.submit {
+    background-color: #8c2b99ff;
+    height: 40px;
+    padding-top: 5px;
+    border-radius: 3px;
+    color: #FEFDFB;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    cursor: pointer;
+}
+
 
 /* ------ Portfolio Block ------ */
 
@@ -339,17 +363,17 @@ img.thumbnail {
 .portfolio-card {
   width: 350px;
   height: auto;
-  background-color: #B0E0E6;
+  background-color: #8c2b99ff;
   border-radius: 5px;
   padding: 10px;
   padding-bottom: 70px;
   margin: 10px;
-  box-shadow: 1px 1px #2c2c2c;
+  box-shadow: 1px 1px #FEFDFB;
   position: relative;
 }
 
 .portfolio-card:nth-child(even) {
-  background-color: #FFA07A;
+  background-color: #8c2b99ff;
 }
 
 
@@ -368,11 +392,11 @@ img.thumbnail {
 }
 
 .portfolio-card h4 {
-  color: #2c2c2c;
+  color: #FEFDFB;
 }
 
 .portfolio-card p {
-  color: #2c2c2c;
+  color: #FEFDFB;
   margin: 0px;
   margin-top: 10px;
   font-size: 14px;
@@ -383,19 +407,19 @@ img.thumbnail {
 }
 
 .portfolio-card:nth-child(odd) a.call-to-action-button {
-  color: #FFA07A;
+  color: #FEFDFB;
 }
 
 .portfolio-card:nth-child(even) a.call-to-action-button {
-  color: #B0E0E6;
+  color: #FEFDFB;
 }
 
 .portfolio-card:nth-child(odd) a.call-to-action-button:hover {
-  color: white;
+  color: #FEFDFB;
 }
 
 .portfolio-card:nth-child(even) a.call-to-action-button:hover {
-  color: white;
+  color: #FEFDFB;
 }
 
 @media (max-width: 600px) {
@@ -420,10 +444,10 @@ img.thumbnail {
 footer {
   text-align: center;
   align-items: center;
-  background-color: #FFA07A;
+  background-color: #8c2b99ff;
   margin-top: 60px;
   padding: 20px 0;
-  color: #2c2c2c;
+  color: #FEFDFB;
   font-size: 1.1rem;
 }
 
@@ -445,5 +469,5 @@ footer p {
 }
 
 footer a:hover {
-  color: white;
+  color: #FEFDFB;
 }
