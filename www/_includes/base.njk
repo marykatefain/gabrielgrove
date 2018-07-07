@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> {% block title %}{% endblock %} | Gabriel Grove</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1a71674110.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400i|Scope+One" rel="stylesheet">
+
+
+      <!-- Meta -->
+      <meta name="description" content="Mare Kate Fain - Philly Hactivist">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <meta name="theme-color" content="#2c2c2c">
+      <meta name="msapplication-config" content="/browserconfig.xml">
+      <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+
+      <!-- Open Graph protocol -->
+      <meta property="og:title" content="Gabriel Grove">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="http://marykatefain.com">
+      <meta property="og:image" content="http://marykatefain.com/assets/images/face2.jpg">
+      <meta property="og:description" content="Gabriel Grove - Philadelphia Hactivist.">
+      <meta property="og:locale" content="en_US">
+
+
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+          <div class="title_and_nav">
+            <a href="/index.html">
+              <div class="title">
+                <h1>Gabriel Grove</h1>
+                <div class="subtitle">Philadelphia Hactivist.</div>
+              </div>
+            </a>
+          <div class="nav">
+            <ul>
+              <li><a{% if current.source == 'work' %} class="active"{% endif %} href="/work">Resume</a></li>
+              <li><a{% if current.source == 'portfolio' %} class="active"{% endif %} href="/portfolio">Portfolio</a></li>
+              <li><a href="https://candlewaster.co" target="_blank">Candlewaster</a></li>
+              <li><a href="https://liberationphilly.org" target="_blank">Liberation Philly</a></li>
+
+
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+
+    <footer>
+      <p>e: mkfain1@gmail.com<span class ="mobile_hide"> |</span> </p>
+
+      <p>p: 610-914-7610 <span class ="mobile_hide"> |</span> </p>
+
+      <p><a href="/contact"><i class="fa fa-email"></i>Contact</a><span class ="mobile_hide"> |</span></p>
+
+      <p><a href="https://github.com/marykatefain" target="_blank"><i class="fa fa-github"></i> View Github Profile</a><span class ="mobile_hide"> |</span></p>
+
+      <p>This website is licensed under <a href ="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GPL</a></p>
+
+    </footer>
+
+  <script src="/assets/main.js"></script>
+
+  </body>
+</html>

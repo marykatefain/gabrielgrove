@@ -1,0 +1,24 @@
+{
+  "name": "marykatefain",
+  "version": "1.0.0",
+  "description": "Gabriel Grove",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npx eleventy --input=www && npx surge _site marykatefain.com",
+    "start": "npx eleventy --serve --input=www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marykatefain/personalsite.git"
+  },
+  "author": "Gabriel Grove",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/marykatefain/personalsite/issues"
+  },
+  "homepage": "https://github.com/marykatefain/personalsite#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "latest",
+    "surge": "latest"
+  }
+}

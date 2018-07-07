@@ -1,0 +1,112 @@
+{% extends "base.njk" %}
+
+{% block title %}
+  Resume
+{% endblock %}
+
+{% block content %}
+
+  <h2>My Resume</h2>
+  <div class="all_content">
+    <div class="primary_content">
+      <div class="resume">
+
+        <div class="job">
+          <h3>Co-Founder, Organizer</h3>
+          <h4 class="tight"><a href="http://dxephilly.org/" target="_blank">Liberation Philadelphia</a> (2016-present)</h4>
+          <ul class="details">
+            <li>Organize large monthy Day of Action, including annual Philadelphia Day for Animals</li>
+            <li>Apply for an manage large grants as well as manage donor relations</li>
+            <li>Travel and speak on various topics related to confrontational activism</li>
+            <li>Manage organization social media and press relations</li>
+            <li>Develop and maintained organization website</li>
+          </ul>
+          <div class="details-button">Show/hide details</div>
+        </div>
+
+        <div class="job">
+          <h3>Co-Founder</h3>
+          <h4 class="tight"><a href="https://candlewaster.co/" target="_blank">Candlewaster</a> (2016 - present)</h4>
+          <ul class="details">
+            <li>Co-founded Philadelphia tech startup using and producing exclusively free software</li>
+            <li>Design and develop unique projects which put ethics at the forefront</li>
+          </ul>
+          <div class="details-button">Show/hide details</div>
+        </div>
+
+        <div class="job">
+          <h3>External Relations Coordinator</h3>
+          <h4 class="tight">YWCA Tri-County Area, Pottstown PA (2014-2016)</h4>
+          <ul class="details">
+            <li>Developed and implemented new website and marketing strategy</li>
+            <li>Assisted Director of Fund Development in grant procurement</li>
+            <li>Served as the public face for the organization to the community</li>
+            <li>Executed new social media strategy and boosted followers by 400%</li>
+            <li>Organized first Take Back the Night rally in Pottstown in support of victims of sexual assault and domestic abuse</li>
+          </ul>
+          <div class="details-button">Show/hide details</div>
+        </div>
+
+        <div class="job">
+          <h3>Office Manager</h3>
+          <h4 class="tight">Advantage Insurance Group, Pottstown PA (2013-2015)</h4>
+          <ul class="details">
+            <li>Implemented a new CRM improving efficiency, customer service, and reducing unnecessary paper use by 50%</li>
+            <li>Created promotional material including flyers, ads, and presentations</li>
+            <li>Oversaw daily operations of the office, client relationships, and managed office interns</li>
+            <li>Designed and managed new company website</li>
+          </ul>
+          <div class="details-button">Show/hide details</div>
+        </div>
+
+        <div class="job">
+          <h3>Education Intern</h3>
+          <h4 class="tight">Advocacy Center of Tomkins County, Ithaca NY (2012)</h4>
+          <ul class="details">
+            <li>Developed educational materials about domestic violence, sexual assault, and available services</li>
+            <li>Assisted in coordinating major fundraisers and awareness events</li>
+          </ul>
+          <div class="details-button">Show/hide details</div>
+        </div>
+
+      </div>
+
+      <div class="mobile_show" id="skills-button"><div class="button" onclick="showSkills()">View Education and Skills</div></div>
+
+    </div>
+    <div class="sidebar" id="skills">
+
+      <img class="thumbnail" src="/assets/images/megaphone.jpg">
+
+      <h3>Skills and Education</h3>
+
+      <h4>Grassroots Organizing</h4>
+      <ul>
+        <li>Community Engagement</li>
+        <li>Event Planning</li>
+        <li>Project Management</li>
+        <li>Public Speaking</li>
+        <li>Non-violence</li>
+        <li>Social Media and Press</li>
+        <li>Civil disobedience</li>
+      </ul>
+
+      <h4>Web Development</h4>
+      <ul>
+        <li>HTML, CSS, and Javascript</li>
+        <li>Python, Django, and Wagtail</li>
+        <li>Node JS, Nunjucks, static templating</li>
+      </ul>
+
+      <h4>Education</h4>
+      <ul>
+        <li>B.S., Applied Psychology</li>
+        <li>Ithaca College, NY</li>
+        <li>Graduated Cum Laude</li>
+        <li>Concentration in Neuroscience</li>
+      </ul>
+
+    </div>
+  </div>
+
+{% endblock %}
