@@ -4,7 +4,7 @@
   "description": "Gabriel Grove",
   "main": "index.js",
   "scripts": {
-    "deploy": "npx eleventy --input=www && npx surge _site marykatefain.com",
+    "deploy": "npx eleventy --input=www && npx surge _site gabrielgrove.com",
     "start": "npx eleventy --serve --input=www"
   },
   "repository": {
