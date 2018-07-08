@@ -203,13 +203,19 @@ a:hover {
   flex:1.2;
   padding-left:40px;
   color: #8c2b99ff;
-  border-left: 2px solid #EDEDED;
 }
 
 @media (max-width: 750px) {
   .sidebar {
+    padding-top: 10px;
+    border-left: none;
+    border-top: 5px solid #2b998c;
+  }
+
+  .sidebar img {
     display: none;
   }
+
 }
 
 .sidebar a:hover {
@@ -265,48 +271,6 @@ img.thumbnail {
 .job {
   margin-bottom: 40px;
   border-top: 5px solid #2b998c;
-}
-
-.mobile_show {
-  display: none;
-}
-.details-button {
-  display: none;
-}
-
-.hide {
-  display: none;
-  color: #8c2b99ff;
-  padding-left: 40px;
-  font-style: italic;
-  cursor: pointer;
-}
-
-@media (max-width: 750px) {
-  .details {
-    display: none;
-  }
-
-  .details-button {
-    display: inline;
-    color: #8c2b99ff;
-    padding-left: 40px;
-    font-style: italic;
-    cursor: pointer;
-  }
-
-  .mobile-expand .details {
-    display: block;
-  }
-
-  .mobile-expand .details-button {
-    content: "Hide details";
-  }
-
-  .mobile-expand .hide {
-    display: inline;
-  }
-
 }
 
 .button {
