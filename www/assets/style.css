@@ -210,6 +210,7 @@ a:hover {
     padding-top: 10px;
     border-left: none;
     border-top: 5px solid #2b998c;
+    margin-right: 50px;
   }
 
   .sidebar img {
@@ -315,6 +316,12 @@ form.contact input, textarea {
   min-height: 40px;
 }
 
+@media (max-width: 750px) {
+  form.contact input, textarea {
+    width: 300px;
+  }
+}
+
 form.contact input.submit {
     background-color: #8c2b99ff;
     height: 40px;
@@ -339,16 +346,28 @@ form.contact input.submit {
   flex-direction: row;
 }
 
+@media (max-width: 750px) {
+  .beads-block {
+    flex-direction: column-reverse;
+  }
+}
+
 
 /* ------ Portfolio Block ------ */
 
 
 .portfolio {
-  width: 115%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 50px;
+}
+
+@media (min-width: 1320px) {
+  .portfolio {
+    width: 115%;
+  }
 }
 
 .portfolio-card {
@@ -434,6 +453,24 @@ footer {
 footer a {
   text-decoration: underline;
   color: inherit;
+}
+
+.footer-links p::after {
+  content: " |"
+}
+
+.footer-links p:last-child::after {
+  content: " "
+}
+
+@media (max-width: 750px) {
+  .footer-links p::after {
+    content: " "
+  }
+}
+
+.license {
+  margin-top: 15px;
 }
 
 footer p {
